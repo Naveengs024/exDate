@@ -9,7 +9,7 @@ namespace exDate.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int UserId { get; set; }
 
-        [Required]
+       
         public string User_Name { get; set; }    
         public string User_Email { get; set; }
         public string Address { get; set; }

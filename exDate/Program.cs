@@ -1,15 +1,23 @@
-using exDate.Models;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using exDate.Models;
+using exDate.Service;
+using exDate.Core;
+using exDate.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
 builder.Services.AddDbContext<CommonDbContext>(options =>
-options.UseSqlServer(builder.Configuration.GetConnectionString("exDateCS")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("exDateCS")));
+
+builder.Services.AddScoped<ILoginRepository, LoginRespository>(); // Add this line
+
+builder.Services.AddScoped<ILoginService, LoginService>();
+
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
