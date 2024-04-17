@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Numerics;
 
 namespace exDate.Models
 {
@@ -16,8 +17,8 @@ namespace exDate.Models
         public string Country_Id { get; set; }
         public string State_Id { get; set; }
         public string District_Id { get; set; }
-        public int Mobile_No { get; set; }
-        public int? Password { get; set; }
+        public BigInteger Mobile_No { get; set; }
+        public string Password { get; set; }
         public bool RememberMe { get; set; }
         public DateTime CreatedDate { get; set; }
         public DateTime ModifiedDate { get; set; }

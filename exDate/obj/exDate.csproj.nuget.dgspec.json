@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\naveenkumar.gs_istee\\Source\\Repos\\exDate\\exDate\\exDate.csproj": {}
+    "C:\\exDate\\exDate\\exDate\\exDate.csproj": {}
   },
   "projects": {
-    "C:\\Users\\naveenkumar.gs_istee\\Source\\Repos\\exDate\\exDate\\exDate.csproj": {
+    "C:\\exDate\\exDate\\exDate\\exDate.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\naveenkumar.gs_istee\\Source\\Repos\\exDate\\exDate\\exDate.csproj",
+        "projectUniqueName": "C:\\exDate\\exDate\\exDate\\exDate.csproj",
         "projectName": "exDate",
-        "projectPath": "C:\\Users\\naveenkumar.gs_istee\\Source\\Repos\\exDate\\exDate\\exDate.csproj",
+        "projectPath": "C:\\exDate\\exDate\\exDate\\exDate.csproj",
         "packagesPath": "C:\\Users\\naveenkumar.gs_istee\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\naveenkumar.gs_istee\\Source\\Repos\\exDate\\exDate\\obj\\",
+        "outputPath": "C:\\exDate\\exDate\\exDate\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages"
