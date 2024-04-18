@@ -17,7 +17,7 @@ namespace exDate.Models
         public string Country_Id { get; set; }
         public string State_Id { get; set; }
         public string District_Id { get; set; }
-        public BigInteger Mobile_No { get; set; }
+        public string Mobile_No { get; set; }
         public string Password { get; set; }
         public bool RememberMe { get; set; }
         public DateTime CreatedDate { get; set; }
