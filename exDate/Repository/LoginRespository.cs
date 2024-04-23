@@ -30,11 +30,16 @@ namespace exDate.Repository
         public async Task<object> CreateProductProcess(Login Details)
         {
            
-            var Exist = await _context.UserDetails.FirstOrDefaultAsync(e => e.User_Name == Details.User_Name);
+            var Username = await _context.UserDetails.FirstOrDefaultAsync(e => e.User_Name == Details.User_Name);
+            var UserEmail = await _context.UserDetails.FirstOrDefaultAsync(e => e.User_Email == Details.User_Email);
 
-            if (Exist != null)
+            if (Username != null)
             {
                 return new { StatusCode = 2, Message = $" {Details.User_Name} Already Exists! Please Try With Other Name" };
+            }
+            else if(UserEmail!= null)
+            {
+                return new { StatusCode = 2, Message = $" {Details.User_Email} Already Exists! Please Try With Other EmailId" };
             }
             else
             {
@@ -58,7 +63,7 @@ namespace exDate.Repository
 
                     var result = _context.UserDetails.Add(AddDetails);
                     await _context.SaveChangesAsync();
-                    return new { StatusCode = 1, Message = "Product Process Created successfully" };
+                    return new { StatusCode = 1, Message = "Account Created successfully" };
                 }
                 catch (Exception ex)
                 {
