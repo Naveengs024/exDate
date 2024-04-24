@@ -20,5 +20,13 @@ namespace exDate.Service
         {
             return await _repository.CreateProductProcess(Details); 
         }
+        public async Task<object> GetUserEmailValidation(string User_Email)
+        {
+            return await _repository.GetUserEmailValidation(User_Email);
+        }
+        public async Task<Login> AuthenticateAsync(string username, string password)
+        {
+            return await _repository.AuthenticateAsync(username, password);
+        }
     }
 }

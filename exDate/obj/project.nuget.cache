@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "16YEdfgf62Vmd9Vc5MSyK8detZ7lM3PR6ahWtIOBMH8godWJxuvc9sWrp/3TWj7wJE0OoKjyJ7LfPRFlfHyvQA==",
+  "dgSpecHash": "htxYZn4newRRMAg1LwjpYqgSWjI8h16+I44qz+GEylXNFJA/fQKTQoBKfW2s5IqMcA03UuK3MTDwc/dmnGveVw==",
   "success": true,
   "projectFilePath": "C:\\exDate\\exDate\\exDate\\exDate.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\naveenkumar.gs_istee\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\naveenkumar.gs_istee\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\naveenkumar.gs_istee\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\naveenkumar.gs_istee\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\7.0.0\\microsoft.aspnetcore.authentication.jwtbearer.7.0.0.nupkg.sha512",
     "C:\\Users\\naveenkumar.gs_istee\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.9\\microsoft.aspnetcore.openapi.7.0.9.nupkg.sha512",
     "C:\\Users\\naveenkumar.gs_istee\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\naveenkumar.gs_istee\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

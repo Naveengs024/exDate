@@ -150,3 +150,4 @@ C:\Users\naveenkumar.gs_istee\Source\Repos\exDate\exDate\obj\Debug\net7.0\refint
 C:\Users\naveenkumar.gs_istee\Source\Repos\exDate\exDate\obj\Debug\net7.0\exDate.pdb
 C:\Users\naveenkumar.gs_istee\Source\Repos\exDate\exDate\obj\Debug\net7.0\exDate.genruntimeconfig.cache
 C:\Users\naveenkumar.gs_istee\Source\Repos\exDate\exDate\obj\Debug\net7.0\ref\exDate.dll
+C:\exDate\exDate\exDate\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

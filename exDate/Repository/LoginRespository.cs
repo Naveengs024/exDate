@@ -26,18 +26,30 @@ namespace exDate.Repository
                 return ex;
             }
         }
+        public async Task<object> GetUserEmailValidation(string User_Email)  
+        {
+            try
+            {
+                var result = await _context.UserDetails.Where(c => c.IsDeleted == false && c.User_Email == User_Email).FirstOrDefaultAsync();
+                if (result != null)
+                {
+                    return new { StatusCode = 2, Message = $" {result.User_Email} Already Exists! Please Try With Other EmailId" };
+                } else {
+                    return new { StatusCode = 1, Message = $" {User_Email} You can Create Account" };
+            } }
+            catch (Exception ex)
+            {
+                return ex;
+            }
+        }
 
         public async Task<object> CreateProductProcess(Login Details)
         {
            
-            var Username = await _context.UserDetails.FirstOrDefaultAsync(e => e.User_Name == Details.User_Name);
+            
             var UserEmail = await _context.UserDetails.FirstOrDefaultAsync(e => e.User_Email == Details.User_Email);
 
-            if (Username != null)
-            {
-                return new { StatusCode = 2, Message = $" {Details.User_Name} Already Exists! Please Try With Other Name" };
-            }
-            else if(UserEmail!= null)
+            if(UserEmail!= null)
             {
                 return new { StatusCode = 2, Message = $" {Details.User_Email} Already Exists! Please Try With Other EmailId" };
             }
@@ -73,6 +85,18 @@ namespace exDate.Repository
             }
            
         }
+        public async Task<Login> AuthenticateAsync(string username, string password)
+        {
+            var user = _context.UserDetails.FirstOrDefault(c => c.User_Name == username);
+            if (user != null && user.Password == password)
+            {
+                return user;
+            }
+
+            // Return null if authentication fails
+            return null;
+        }
+
 
 
     }
